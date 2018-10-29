@@ -168,7 +168,7 @@ def query_api(file, term, offset, biz_set, lat, long):
         #    continue
         with open(file, 'a', encoding='utf8') as outfile:
             json.dump(biz, outfile, indent = 2, ensure_ascii = False)
-            outfile.write('\n')
+            outfile.write(',\n')
     
     return total
 
